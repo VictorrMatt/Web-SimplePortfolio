@@ -14,6 +14,11 @@ body {
   font-weight: 500;
 }
 
+main {
+  margin: 120px 14px 120px 14px;
+  min-width: 472px;
+}
+
 /* FLEX */
 .flex-container {
   display: flex;
@@ -159,10 +164,29 @@ section {
   gap: 14px;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   main {
     display: flex;
     gap: 14px;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 60%;
+
+    margin: 0 14px 0 14px;
+    min-width: 947px;
+  }
+
+  main section {
+    width: 100%;
+  }
+  main aside {
+    width: 100%;
   }
 }
